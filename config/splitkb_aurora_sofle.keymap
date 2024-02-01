@@ -28,7 +28,6 @@
     behaviors {
         media: media {
             compatible = "zmk,behavior-tap-dance";
-            label = "MEDIA";
             #binding-cells = <0>;
             bindings = <&kp C_PLAY_PAUSE>, <&kp C_NEXT>, <&kp C_PREVIOUS>;
         };
