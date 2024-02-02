@@ -15,10 +15,7 @@
 */
 
 &led_strip {
-    //chain-length = <6>;
-
     chain-length = <35>; // Uncomment if using both per-key and underglow LEDs
-    // chain-length = <29>; // Uncomment if using only per-key LEDs.
 };
 
 / {
@@ -63,8 +60,8 @@
                 <&macro_release>,
                 <&kp LALT>;
 
-            wait-ms = <1>;
-            tap-ms = <1>;
+            wait-ms = <0>;
+            tap-ms = <0>;
         };
 
         enie_may: enie_may {
@@ -78,8 +75,8 @@
                 <&macro_release>,
                 <&kp LEFT_ALT>;
 
-            wait-ms = <1>;
-            tap-ms = <1>;
+            wait-ms = <0>;
+            tap-ms = <0>;
         };
     };
 
