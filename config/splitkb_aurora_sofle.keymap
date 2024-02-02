@@ -37,10 +37,17 @@
 
         enie_combo {
             bindings = <&enie_may>;
-            key-positions = <51 34>;
+            key-positions = <34 24>;
             layers = <0>;
             require-prior-idle-ms = <0>;
             timeout-ms = <500>;
+        };
+
+        enie_combo2 {
+            bindings = <&enie_may>;
+            key-positions = <34 49>;
+            timeout-ms = <500>;
+            layers = <0>;
         };
     };
 
@@ -55,6 +62,9 @@
                 <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_4>,
                 <&macro_release>,
                 <&kp LALT>;
+
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         enie_may: enie_may {
@@ -67,6 +77,9 @@
                 <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_5>,
                 <&macro_release>,
                 <&kp LEFT_ALT>;
+
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
     };
 
