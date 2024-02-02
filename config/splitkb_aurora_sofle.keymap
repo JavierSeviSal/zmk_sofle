@@ -43,24 +43,20 @@
     };
 
     macros {
-        enie_min: enie {
+        enie_min: enie_min {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&kp LS(KP_NUMBER_1) &kp LA(KP_NUMBER_6) &kp LA(KP_NUMBER_4)>,
                 <&macro_press>;
-
-            label = "ENIE";
         };
 
-        enie_may: ENIE {
+        enie_may: enie_may {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&kp LS(KP_NUMBER_1) &kp LA(KP_NUMBER_6) &kp LA(KP_NUMBER_5)>,
                 <&macro_press>;
-
-            label = "ENIE";
         };
     };
 
