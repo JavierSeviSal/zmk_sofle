@@ -46,15 +46,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&mo 1>,
-                <&macro_tap>,
-                <&rgb_ug RGB_COLOR_HSB(102,94,70)>,
+                <&macro_press &mo 1>,
+                <&macro_tap &rgb_ug RGB_COLOR_HSB(102,94,70)>,
                 <&macro_pause_for_release>,
-                <&macro_release>,
-                <&mo 1>,
-                <&macro_tap>,
-                <&rgb_ug RGB_COLOR_HSB(170,100,50)>;
+                <&macro_release &mo 1>,
+                <&macro_tap &rgb_ug RGB_COLOR_HSB(172,28,95)>;
 
             label = "COLOR_LYR1";
             wait-ms = <0>;
@@ -65,15 +61,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&mo 1>,
-                <&macro_tap>,
-                <&rgb_ug RGB_COLOR_HSB(276,94,78)>,
+                <&macro_press &mo 2>,
+                <&macro_tap &rgb_ug RGB_COLOR_HSB(276,94,78)>,
                 <&macro_pause_for_release>,
-                <&macro_release>,
-                <&mo 1>,
-                <&macro_tap>,
-                <&rgb_ug RGB_COLOR_HSB(170,100,50)>;
+                <&macro_release &mo 2>,
+                <&macro_ta &rgb_ug RGB_COLOR_HSB(172,28,95)>;
 
             label = "COLOR_LYR2";
             wait-ms = <0>;
