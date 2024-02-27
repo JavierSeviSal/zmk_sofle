@@ -17,7 +17,7 @@
 */
 
 &led_strip {
-    chain-length = <35>; // Uncomment if using both per-key and underglow LEDs
+    chain-length = <6>; // Uncomment if using both per-key and underglow LEDs
 };
 
 / {
