@@ -193,6 +193,10 @@
 &trans      &trans        &trans        &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans         &trans    &trans  &kp KP_EQUAL  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_0  &trans
                           &trans        &trans                &trans                 &trans         &trans    &trans  &trans        &trans           &trans           &trans
             >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp LA(LS(TAB)) LA(TAB)>;
         };
     };
 };
