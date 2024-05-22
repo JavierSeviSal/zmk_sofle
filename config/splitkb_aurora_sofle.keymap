@@ -10,11 +10,11 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 
-/*
+
 &nice_view_spi {
-    cs-gpios = <&gpio1 01 GPIO_ACTIVE_HIGH>;
+    cs-gpios = <&gpio0 08 GPIO_ACTIVE_HIGH>;
 };
-*/
+
 
 &led_strip {
     chain-length = <6>; // Uncomment if using both per-key and underglow LEDs
