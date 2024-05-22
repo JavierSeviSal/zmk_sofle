@@ -12,7 +12,7 @@
 
 
 &nice_view_spi {
-    cs-gpios = <&gpio0 08 GPIO_ACTIVE_HIGH>;
+    cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
 };
 
 
