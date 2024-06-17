@@ -16,6 +16,10 @@
     chain-length = <6>; // Uncomment if using both per-key and underglow LEDs
 };
 
+&mt {
+tapping-term-ms = <400>;
+};
+
 / {
     behaviors {
         media: media {
@@ -159,10 +163,6 @@
             #binding-cells = <0>;
             bindings = <&kp LG(X) &kp U &kp S>;
         };
-    };
-
-    &mt {
-    tapping-term-ms = <400>;
     };
 
     keymap {
