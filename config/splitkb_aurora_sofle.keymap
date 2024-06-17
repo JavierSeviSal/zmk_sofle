@@ -34,66 +34,79 @@
             bindings = <&kp CAPSLOCK>;
             key-positions = <28 31>;
             layers = <0>;
+            timeout-ms = <100>;
         };
 
         a_tilde {
             bindings = <&kp RA(A)>;
             key-positions = <28 25>;
+            timeout-ms = <100>;
         };
 
         enie {
             bindings = <&kp RA(N)>;
             key-positions = <28 44>;
+            timeout-ms = <100>;
         };
 
         a_tilde_2 {
             bindings = <&kp RA(A)>;
             key-positions = <31 25>;
+            timeout-ms = <100>;
         };
 
         enie_2 {
             bindings = <&kp RA(N)>;
             key-positions = <44 31>;
+            timeout-ms = <100>;
         };
 
         e_tilde {
             bindings = <&kp RA(E)>;
             key-positions = <28 15>;
+            timeout-ms = <100>;
         };
 
         e_tilde_2 {
             bindings = <&kp RA(E)>;
             key-positions = <15 31>;
+            timeout-ms = <100>;
         };
 
         u_tilde {
             bindings = <&kp RA(U)>;
             key-positions = <28 19>;
+            timeout-ms = <100>;
         };
 
         u_tilde_2 {
             bindings = <&kp RA(U)>;
             key-positions = <19 31>;
+            timeout-ms = <100>;
         };
 
         i_tilde {
             bindings = <&kp RA(I)>;
             key-positions = <28 20>;
+            timeout-ms = <100>;
         };
 
         i_tilde_2 {
             bindings = <&kp RA(I)>;
             key-positions = <20 31>;
+            timeout-ms = <100>;
         };
 
         o_tilde {
             bindings = <&kp RA(O)>;
             key-positions = <28 21>;
+            timeout-ms = <100>;
         };
 
         o_tilde_2 {
             bindings = <&kp RA(O)>;
             key-positions = <21 31>;
+            timeout-ms = <100>;
         };
     };
 
