@@ -37,7 +37,7 @@
             timeout-ms = <100>;
         };
 
-        a_tilde {
+        /*a_tilde {
             bindings = <&kp RA(A)>;
             key-positions = <28 25>;
             timeout-ms = <100>;
@@ -107,7 +107,7 @@
             bindings = <&kp RA(O)>;
             key-positions = <21 31>;
             timeout-ms = <100>;
-        };
+        };*/
     };
 
     macros {
