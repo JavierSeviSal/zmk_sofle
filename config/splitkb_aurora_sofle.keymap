@@ -35,6 +35,11 @@
             key-positions = <28 31>;
             layers = <0>;
         };
+
+        a_tilde {
+            bindings = <&sk RA(A)>;
+            key-positions = <28 25>;
+        };
     };
 
     macros {
