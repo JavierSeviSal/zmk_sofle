@@ -16,7 +16,7 @@
     chain-length = <6>; // Uncomment if using both per-key and underglow LEDs
 };
 
-&mt { tapping-term-ms = <400>; };
+&mt { tapping-term-ms = <600>; };
 
 / {
     behaviors {
