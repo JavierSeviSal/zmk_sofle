@@ -16,15 +16,7 @@
     chain-length = <6>; // Uncomment if using both per-key and underglow LEDs
 };
 
-hm: homerow-mods {
-    compatible = "zmk,behavior-hold-tap";
-    label = "homehow-mods";
-    #binding-cells = <2>;
-    tapping-term-ms = <175>;
-    flavor = "tap-preferred";
-    quick-tap-ms = <125>;
-    global-quick-tap;
-    bindings = <&kp>, <&kp>; 
+
 
 / {
     behaviors {
@@ -34,6 +26,16 @@ hm: homerow-mods {
             bindings = <&kp C_PLAY_PAUSE>, <&kp C_NEXT>, <&kp C_PREVIOUS>;
 
             tapping-term-ms = <400>;
+        };
+        hm: homerow-mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "homehow-mods";
+            #binding-cells = <2>;
+            tapping-term-ms = <175>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <125>;
+            global-quick-tap;
+            bindings = <&kp>, <&kp>; 
         };
     };
 
