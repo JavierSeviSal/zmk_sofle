@@ -16,8 +16,6 @@
     chain-length = <6>; // Uncomment if using both per-key and underglow LEDs
 };
 
-
-
 / {
     behaviors {
         media: media {
@@ -27,6 +25,7 @@
 
             tapping-term-ms = <400>;
         };
+
         hm: homerow-mods {
             compatible = "zmk,behavior-hold-tap";
             label = "homehow-mods";
@@ -35,7 +34,7 @@
             flavor = "tap-preferred";
             quick-tap-ms = <125>;
             global-quick-tap;
-            bindings = <&kp>, <&kp>; 
+            bindings = <&kp>, <&kp>;
         };
     };
 
@@ -230,6 +229,25 @@
             sensor-bindings =
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>,
                 <&inc_dec_kp LA(LS(TAB)) LA(TAB)>;
+        };
+
+        Numbers {
+            bindings = <
+&trans  &trans           &trans        &trans        &trans        &trans                          &trans        &trans         &trans        &trans     &trans    &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT                     &kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp EQUAL  &kp PLUS  &trans
+&trans  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                    &kp NUMBER_6  &kp N7         &kp N8        &kp N9     &kp N0    &trans
+&trans  &trans           &trans        &trans        &trans        &trans        &trans    &trans  &trans        &trans         &trans        &trans     &trans    &trans
+                         &trans        &trans        &trans        &trans        &trans    &trans  &trans        &trans         &trans        &trans
+            >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        activate_numbers {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
