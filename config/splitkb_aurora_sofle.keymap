@@ -36,6 +36,17 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
+
+        tm: thumb_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Thumb_mods";
+            #binding-cells = <2>;
+            tapping-term-ms = <175>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <125>;
+            global-quick-tap;
+            bindings = <&mo>, <&kp>;
+        };
     };
 
     combos {
@@ -184,11 +195,11 @@
             //               |CTRL | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   | RALT |
 
             bindings = <
-&kp ESC    &kp N1  &kp N2         &kp N3    &kp N4           &kp N5                           &kp N6  &kp N7           &kp N8         &kp N9    &kp N0         &kp EQUAL
-&kp TAB    &kp Q   &kp W          &kp E     &kp R            &kp T                            &kp Y   &kp U            &kp I          &kp O     &kp P          &kp MINUS
-&kp LCTRL  &kp A   &kp S          &kp D     &hm RIGHT_ALT F  &kp G                            &kp H   &hm RIGHT_ALT J  &kp K          &kp L     &kp SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z   &kp X          &kp C     &kp V            &kp B   &media       &none       &kp N   &kp M            &kp COMMA      &kp DOT   &kp FSLH       &kp RSHFT
-                   &kp LA(LCTRL)  &kp LALT  &kp DEL          &mo 1   &kp SPACE    &kp RETURN  &mo 2   &kp BSPC         &kp RIGHT_ALT  &kp RGUI
+&kp ESC    &kp N1  &kp N2              &kp N3    &kp N4           &kp N5                                 &kp N6           &kp N7           &kp N8         &kp N9               &kp N0         &kp EQUAL
+&kp TAB    &kp Q   &kp W               &kp E     &kp R            &kp T                                  &kp Y            &kp U            &kp I          &kp O                &kp P          &kp MINUS
+&kp LCTRL  &kp A   &hm LEFT_CONTROL S  &kp D     &hm RIGHT_ALT F  &kp G                                  &kp H            &hm RIGHT_ALT J  &kp K          &hm RIGHT_CONTROL L  &kp SEMICOLON  &kp SQT
+&kp LSHFT  &kp Z   &kp X               &kp C     &kp V            &kp B         &media       &none       &kp N            &kp M            &kp COMMA      &kp DOT              &kp FSLH       &kp RSHFT
+                   &kp LA(LCTRL)       &kp LALT  &kp DEL          &tm 1 DELETE  &kp SPACE    &kp RETURN  &tm 2 BACKSPACE  &kp BSPC         &kp RIGHT_ALT  &kp RGUI
             >;
 
             sensor-bindings =
