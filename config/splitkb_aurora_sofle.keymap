@@ -49,16 +49,16 @@
         };
 
         weak: weak {
-                    compatible = "zmk,behavior-hold-tap";
-                    label = "WEAK";
-                    bindings = <&kp>, <&kp>;
-        
-                    #binding-cells = <2>;
-                    tapping-term-ms = <230>;
-                    flavor = "tap-preferred";
-                    require-prior-idle-ms = <125>;
-                    quick-tap-ms = <230>;
-                };
+            compatible = "zmk,behavior-hold-tap";
+            label = "WEAK";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <230>;
+            flavor = "tap-preferred";
+            require-prior-idle-ms = <125>;
+            quick-tap-ms = <230>;
+        };
     };
 
     combos {
@@ -207,11 +207,11 @@
             //               |CTRL | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   | RALT |
 
             bindings = <
-&kp ESC    &kp N1      &kp N2              &kp N3        &kp N4           &kp N5                                 &kp N6           &kp N7           &kp N8             &kp N9               &kp N0         &kp EQUAL
-&kp TAB    &kp Q       &kp W               &kp E         &kp R            &kp T                                  &kp Y            &kp U            &kp I              &kp O                &kp P          &kp MINUS
-&kp LCTRL  &hm LGUI A  &hm LEFT_CONTROL S  &hm LSHIFT D  &hm RIGHT_ALT F  &kp G                                  &kp H            &hm RIGHT_ALT J  &hm RIGHT_SHIFT K  &hm RIGHT_CONTROL L  &kp SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z       &kp X               &kp C         &kp V            &kp B         &media       &none       &kp N            &kp M            &kp COMMA          &kp DOT              &kp FSLH       &kp RSHFT
-                       &kp LA(LCTRL)       &kp LALT      &kp TAB          &lt 1 DELETE  &kp SPACE    &kp RETURN  &lt 2 BACKSPACE  &kp ESCAPE       &kp RIGHT_ALT      &kp RGUI
+&kp ESC    &kp N1        &kp N2                &kp N3           &kp N4            &kp N5                                 &kp N6           &kp N7             &kp N8           &kp N9                 &kp N0         &kp EQUAL
+&kp TAB    &kp Q         &kp W                 &kp E            &kp R             &kp T                                  &kp Y            &kp U              &kp I            &kp O                  &kp P          &kp MINUS
+&kp LCTRL  &weak LGUI A  &weak LEFT_CONTROL S  &hm RIGHT_ALT D  &hm LEFT_SHIFT F  &kp G                                  &kp H            &hm RIGHT_SHIFT J  &hm RIGHT_ALT K  &weak RIGHT_CONTROL L  &kp SEMICOLON  &kp SQT
+&kp LSHFT  &kp Z         &kp X                 &kp C            &kp V             &kp B         &media       &none       &kp N            &kp M              &kp COMMA        &kp DOT                &kp FSLH       &kp RSHFT
+                         &kp LA(LCTRL)         &kp LALT         &kp TAB           &lt 1 DELETE  &kp SPACE    &kp RETURN  &lt 2 BACKSPACE  &kp ESCAPE         &kp RIGHT_ALT    &kp RGUI
             >;
 
             sensor-bindings =
