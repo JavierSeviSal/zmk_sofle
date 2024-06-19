@@ -47,6 +47,18 @@
             global-quick-tap;
             bindings = <&mo>, <&kp>;
         };
+
+        weak: weak {
+                    compatible = "zmk,behavior-hold-tap";
+                    label = "WEAK";
+                    bindings = <&kp>, <&kp>;
+        
+                    #binding-cells = <2>;
+                    tapping-term-ms = <230>;
+                    flavor = "tap-preferred";
+                    require-prior-idle-ms = <125>;
+                    quick-tap-ms = <230>;
+                };
     };
 
     combos {
